@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thgillai <thgillai@student.s19.be>         +#+  +:+       +#+        */
+/*   By: thgillai <thgillai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 13:02:10 by thgillai          #+#    #+#             */
-/*   Updated: 2021/08/21 15:08:46 by thgillai         ###   ########.fr       */
+/*   Updated: 2021/09/15 15:18:42 by thgillai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/pipex.h"
-
-// Exit et close les fichiers de la structure si il y en a
 
 char	*exit_error_2(t_pipe *pipex, char *s)
 {
@@ -27,8 +25,6 @@ char	*exit_error_2(t_pipe *pipex, char *s)
 		close(pipex->fd[1]);
 	exit(EXIT_FAILURE);
 }
-
-// Trouve le path du repertoire courant dans envp
 
 static char	*path(char **envp)
 {
@@ -47,8 +43,6 @@ static char	*path(char **envp)
 	return (NULL);
 }
 
-// Remplis la structure
-
 static t_pipe	fill_str(char **av, char **envp)
 {
 	t_pipe		pipex;
@@ -64,8 +58,6 @@ static t_pipe	fill_str(char **av, char **envp)
 	pipex.envp = envp;
 	return (pipex);
 }
-
-// main
 
 int	main(int ac, char **av, char **envp)
 {
