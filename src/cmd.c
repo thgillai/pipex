@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cmd.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thgillai <thgillai@student.s19.be>         +#+  +:+       +#+        */
+/*   By: thgillai <thgillai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 14:49:33 by thgillai          #+#    #+#             */
-/*   Updated: 2021/08/21 15:21:25 by thgillai         ###   ########.fr       */
+/*   Updated: 2021/09/14 13:28:37 by thgillai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	cmd_2(t_pipe *pipex)
 
 	cmd = ft_split(pipex->cmd2, ' ');
 	if (cmd == NULL)
-		exit_error("Split Error: split failed in cmd_1");
+		exit_error("Split Error: split failed in cmd_2");
 	binary = pathing(pipex, cmd[0]);
 	pipex->pid_2 = fork();
 	if (pipex->pid_2 == 0)

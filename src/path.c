@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   path.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thgillai <thgillai@student.s19.be>         +#+  +:+       +#+        */
+/*   By: thgillai <thgillai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 15:11:20 by thgillai          #+#    #+#             */
-/*   Updated: 2021/08/21 15:26:22 by thgillai         ###   ########.fr       */
+/*   Updated: 2021/09/15 15:03:21 by thgillai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,17 +58,11 @@ static char	*parse_path(t_pipe *pipex, char *cmd_0)
 	return (exit_error_2(pipex, "Path Error: Wrong/Inexistant path"));
 }
 
-// 
-
 char	*pathing(t_pipe *pipex, char *cmd_0)
 {
 	char	*path;
-	int		absolute_path;
 
-	absolute_path = 0;
 	if (cmd_0[0] == '/' || cmd_0[0] == '.' || cmd_0[0] == '~')
-		absolute_path = 1;
-	if (absolute_path == 1)
 	{
 		path = ft_strdup(cmd_0);
 		if (path == NULL)

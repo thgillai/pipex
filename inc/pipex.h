@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thgillai <thgillai@student.s19.be>         +#+  +:+       +#+        */
+/*   By: thgillai <thgillai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 13:02:32 by thgillai          #+#    #+#             */
-/*   Updated: 2021/08/05 15:34:03 by thgillai         ###   ########.fr       */
+/*   Updated: 2021/09/15 15:10:04 by thgillai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ typedef struct s_pipe
 }			t_pipe;
 
 /* Open */
-int	open_w(char *av);
-int	open_r(char *av);
+int		open_w(char *av);
+int		open_r(char *av);
 
 /* Cmd */
-int	cmd_1(t_pipe *pipex);
-int	cmd_2(t_pipe *pipex);
+int		cmd_1(t_pipe *pipex);
+int		cmd_2(t_pipe *pipex);
 
 /* Path */
 char	*pathing(t_pipe *pipex, char *cmd_0);

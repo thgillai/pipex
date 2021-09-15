@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   split.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thgillai <thgillai@student.s19.be>         +#+  +:+       +#+        */
+/*   By: thgillai <thgillai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 13:06:06 by thgillai          #+#    #+#             */
-/*   Updated: 2021/08/05 15:32:12 by thgillai         ###   ########.fr       */
+/*   Updated: 2021/09/15 15:10:55 by thgillai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,4 +97,3 @@ char	**ft_split(char const *s1, char c)
 	tab[j] = NULL;
 	return (tab);
 }
-
