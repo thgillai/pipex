@@ -6,7 +6,7 @@
 /*   By: thgillai <thgillai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/19 13:05:30 by thgillai          #+#    #+#             */
-/*   Updated: 2021/09/15 15:10:21 by thgillai         ###   ########.fr       */
+/*   Updated: 2021/09/17 09:22:52 by thgillai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	open_w(char *av)
 
 	fd = open(av, O_WRONLY | O_CREAT | O_TRUNC, 0777);
 	if (fd == -1)
-		exit_error("Outfile Error: fail to open and write");
+		exit_error("Outfile Error: fail to open and write\n");
 	return (fd);
 }
 
@@ -28,6 +28,6 @@ int	open_r(char *av)
 
 	fd = open(av, O_RDONLY);
 	if (fd == -1)
-		exit_error("Infile Error: fail to open and read");
+		exit_error("Infile Error: fail to open and read\n");
 	return (fd);
 }
